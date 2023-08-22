@@ -69,7 +69,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     if (hasCamPermission) {
                         if (hasReadCode) {
-                            LoadWebUrl(code)
+                            //LoadWebUrl(code)
+                            ResultScreen(code = code)
                         } else {
                             AndroidView(
                                 factory = { context ->
